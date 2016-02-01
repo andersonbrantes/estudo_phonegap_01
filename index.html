@@ -28,8 +28,13 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/mui-colors.min.css">
         <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/mui.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/geolocation.js"></script>
@@ -46,8 +51,8 @@
             </div>
             <h1>GeoLocation Application</h1>
             <br />
-            <button onclick="showCurrentPosition()">Pegar Localização</button>
-            Mostrar a localização
+            <button onclick="showCurrentPosition()" class="btn btn-primary">Pegar Localização</button>
+            <h2>Sua localização</h2>
             <div id="Latitude">Latitude: </div>
             <div id="Longitude">Longitude: </div>
             <div id="geomap" style="height:300px; width: 100%"></div>
