@@ -43,20 +43,21 @@
         <title>GeoLocation App</title>
     </head>
     <body>
-        <div class="Geolocation">
-            <h1>Geolocation</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+
+        <div class="mui-container">
+          <div class="mui-panel">
+            <div class="Geolocation">
+                <h2>Geolocalização App</h2>
+                <br />
+                <button onclick="showCurrentPosition()" class="mui-btn mui-btn--primary mui-btn--raised">Pegar Localização</button>
+                <h4>Sua localização</h4>
+                <div id="Latitude">Latitude: </div>
+                <div id="Longitude">Longitude: </div>
+                <div id="geomap" style="height:300px; width: 100%"></div>
             </div>
-            <h1>GeoLocation Application</h1>
-            <br />
-            <button onclick="showCurrentPosition()" class="btn btn-primary">Pegar Localização</button>
-            <h2>Sua localização</h2>
-            <div id="Latitude">Latitude: </div>
-            <div id="Longitude">Longitude: </div>
-            <div id="geomap" style="height:300px; width: 100%"></div>
+          </div>
         </div>
+
         <script type="text/javascript">
             app.initialize();
         </script>
