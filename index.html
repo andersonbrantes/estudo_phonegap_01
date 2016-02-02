@@ -41,6 +41,36 @@
         <script type="text/javascript" src="js/acelerometro.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Empty
+    }
+
+    // alert dialog dismissed
+        function alertDismissed() {
+            // do something
+        }
+
+    // Show a custom alertDismissed
+    //
+    function showAlert() {
+        navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+    }
+
+    </script>
+
         <title>GeoLocation App</title>
     </head>
     <body>
@@ -65,8 +95,7 @@
                 <button onclick="showCurrentPosition()" class="mui-btn mui-btn--primary mui-btn--raised">Pegar Localização</button>
 
 
-                <button onclick="startWatch();" class="mui-btn mui-btn--danger mui-btn--raised">Start Watching</button>
-                <button onclick="stopWatch();" class="mui-btn mui-btn--primary mui-btn--raised">Stop Watching</button>
+                <button onclick="showAlert(); return false;" class="mui-btn mui-btn--danger mui-btn--raised">Alerta</button>
 
                 <h4>Sua localização</h4>
                 <div id="Latitude">Latitude: </div>
