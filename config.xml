@@ -70,6 +70,7 @@
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <plugin name="org.apache.cordova.geolocation" spec="0.3.12" source="pgb" />
+    <plugin name="org.apache.cordova.device-motion" spec="0.2.11" source="pgb" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
